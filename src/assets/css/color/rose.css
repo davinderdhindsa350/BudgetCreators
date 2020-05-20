@@ -21,7 +21,7 @@ VERSION : 1.1
 {
     border-color:#000;/*Defines the color of the border*/
 }
-.nim-menu.navbar-default .navbar-nav > li > a:hover
+.nim-menu.navbar-default .navbar-nav > li > a:hover,.tempstyle> li > a:hover
  {
 color:#f8198d;
 }
@@ -89,7 +89,7 @@ color:#f8198d;
 ol.type li a:hover{ color:#f8198d;}
 
 .ramsh-menu.navbar-default .navbar-nav > li > a:hover,a.fa.fa-angle-down:hover,.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus
+.navbar-default .navbar-nav > .active > a:focus,.tempstyle > li > a:hover,.tempstyle > .active > a,.tempstyle > .active > a:hover,.tempstyle > .active > a:focus
 {
     color:#f8198d;
 }

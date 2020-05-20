@@ -624,14 +624,14 @@ var Tweenable = (function () {
  * [Scripty2](https://github.com/madrobby/scripty2/blob/master/src/effects/transitions/penner.js).
  *
  * Based on Easing Equations (c) 2003 [Robert
- * Penner](http://www.robertpenner.com/), all rights reserved. This work is
+ * Penner](http://www.robertpenner.com/), . This work is
  * [subject to terms](http://www.robertpenner.com/easing_terms_of_use.html).
  */
 
 /*!
  *  TERMS OF USE - EASING EQUATIONS
  *  Open source under the BSD License.
- *  Easing Equations (c) 2003 Robert Penner, all rights reserved.
+ *  Easing Equations (c) 2003 Robert Penner, .
  */
 
 ;(function () {
@@ -831,7 +831,7 @@ var Tweenable = (function () {
  */
 
 /**
- *  Copyright (c) 2006 Apple Computer, Inc. All rights reserved.
+ *  Copyright (c) 2006 Apple Computer, Inc. .
  *
  *  Redistribution and use in source and binary forms, with or without
  *  modification, are permitted provided that the following conditions are met:

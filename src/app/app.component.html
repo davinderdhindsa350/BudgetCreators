@@ -28,7 +28,6 @@
           </button>
             <a class="navbar-brand" href="index.html">B<span class="themecolor">W</span>C</a>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -36,8 +35,14 @@
             <li><a href="#one" class="page-scroll">About</a></li>
             <li><a href="#two" class="page-scroll">Our Works</a></li>
             <li><a href="#three" class="page-scroll">Team</a></li>
-            <li><a href="#four" class="page-scroll">Commercial Demo</a></li>
-			<li><a href="#personalSite" class="page-scroll">Personal Website</a></li>
+            <li (mouseleave)="childMenu=false" ><a (click)="toglechild()" (mouseenter)="childMenu=true"  class="page-scroll">Website Demo's <i class="fa fa-chevron-down"></i></a>
+              <ul style="background-color: rgba(0, 0, 0, 0.76) ; " class="nav navbar-right tempstyle" *ngIf="childMenu">
+              <li><a href="#four"  (click)="toglechild()" class="page-scroll tempstyle2">Commercial Demo</a></li>
+             <li><a href="#personalSite"  (click)="toglechild()" class="page-scroll tempstyle2">Personal Website</a></li>
+             <li><a href="#EducationalSite"   (click)="toglechild()" class="page-scroll tempstyle2">Educational Website</a></li>
+             <li><a href="#MarketingSite"   (click)="toglechild()" class="page-scroll tempstyle2">Marketing Website</a></li>
+            </ul>
+            </li>
             <li><a href="#five" class="page-scroll">Status</a></li>
             <li><a href="#six" class="page-scroll">Testimonials</a></li>
              <li><a href="#seven" class="page-scroll">Services</a></li>
@@ -290,8 +295,7 @@
  
  
  
- 
- <!-- [INSPIRATION]
+ <!-- [Commercial Website Demo's]
  ============================================================================================================================-->
  <section class="inspiration" id="four">
  	 <div  class="gap"></div>
@@ -415,6 +419,8 @@
     </div>
     <div  class="gap"></div>
   </section>
+  <!----       Personal Site Demo's========================
+  ======================================================================      -->
   <section  class="services white-background black" id="personalSite">
     <div  class="gap"></div>
     <div  class="container">
@@ -504,6 +510,11 @@
       <div  class="gap"></div>
       <div  class="row">
         <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/personalWebsite/MyResume/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="MyResume" src="assets/images/MyResume.JPG" style="height:10%;">
+            <div >MyResume</div>
+          </a></div>
+          <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
             href="assets/personalWebsite/satner/index.html" style="border-color:#000000;background-color: #0a0808;"
             target="_blank"><img  alt="satner" src="assets/images/satner.JPG" style="height:10%;">
             <div >Satner</div>
@@ -517,7 +528,220 @@
     </div>
     <div  class="gap"></div>
   </section>
+<!----------------Educational site Demo's
+================================================================= ---------->
+  <section  class="inspiration" id="EducationalSite">
+    <div  class="gap"></div>
+    <div  class="container">
+      <div  class="row">
+        <div  class="col-md-12 text-center">
+          <div  class="intermediate-container">
+            <div  class="title">
+              <h4 ><i >Change way OF <span 
+                    class="themecolor">Learning?</span></i></h4>
+            </div>
+            <div  class="themecolor">
+              <h2 >E-Educational Website Demo's!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/edusmart/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="edusmart" src="assets/images/edusmart.JPG" style="height:10%;">
+            <div >e-dusmart</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/edustage/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="edustage" src="assets/images/edustage.JPG" style="height:10%;">
+            <div >e-dustage</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/knowledge/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="knowledge" src="assets/images/knowledge.JPG" style="height:10%;">
+            <div >knowledge</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/Mentor/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Mentor" src="assets/images/Mentor.JPG" style="height:10%;">
+            <div >Mentor</div>
+          </a></div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/unica/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="unica" src="assets/images/unica.JPG"
+              style="height:10%;">
+            <div >unica</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/unicat/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="unicat" src="assets/images/unicat.JPG" style="height:10%;">
+            <div >unicat</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/webuni/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="webuni" src="assets/images/webuni.JPG" style="height:10%;">
+            <div >webuni</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/wiser/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="wiser" src="assets/images/wiser.JPG" style="height:10%;">
+            <div >wiser</div>
+          </a></div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/Dhyanaosmania/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Dhyanaosmania" src="assets/images/Dhyanaosmania.JPG" style="height:10%;">
+            <div >Dhyanaosmania</div>
+          </a></div>
+          <!--pending  -->
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/School/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="School" src="assets/images/School.JPG" style="height:10%;">
+            <div >School</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/web-edu/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="web-edu" src="assets/images/web-edu.JPG" style="height:10%;">
+            <div >web-edu</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/Flexor/about.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Flexor" src="assets/images/Flexor_1.JPG" style="height:10%;">
+            <div  class="nim-service-detail">Flexor</div>
+          </a></div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Education/Eterna/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Eterna" src="assets/images/Eterna.JPG" style="height:10%;">
+            <div >Eterna</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="https://forms.gle/xEcnSmQ6gRDY2bka7" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank">
+            <div >Create</div>
+          </a></div>
+      </div>
+    </div>
+    <div  class="gap"></div>
+  </section>
 
+
+  <!----       Marketing Site Demo's========================
+  ======================================================================      -->
+  <section  class="services white-background black" id="MarketingSite">
+    <div  class="gap"></div>
+    <div  class="container">
+      <div  class="row">
+        <div  class="col-md-12 text-center">
+          <div  class="intermediate-container">
+            <div  class="title">
+              <h4 ><i >Change your <span 
+                    class="themecolor">Marketing?</span></i></h4>
+            </div>
+            <div  class="themecolor">
+              <h2 >Marketing Website Demo's!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/Avilon/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Avilon" src="assets/images/Avilon.JPG" style="height:10%;">
+            <div >Avilon</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/Flexor/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Flexor" src="assets/images/Flexor.JPG" style="height:10%;">
+            <div >Flexor</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/NewBiz/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="NewBiz" src="assets/images/NewBiz.JPG" style="height:10%;">
+            <div >NewBiz</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/Ninestars/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Ninestars" src="assets/images/Ninestars.JPG" style="height:10%;">
+            <div >Ninestars</div>
+          </a></div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/Rapid/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="Rapid" src="assets/images/Rapid.JPG"
+              style="height:10%;">
+            <div >Rapid</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/SoftLand/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="SoftLand" src="assets/images/SoftLand.JPG" style="height:10%;">
+            <div >SoftLand</div>
+          </a></div>
+           <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/eStartup/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="eStartup" src="assets/images/eStartup.JPG" style="height:10%;">
+            <div >eStartup</div>
+          </a></div>
+
+ <!--Pending-->
+      <!-- 
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/jackson/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="jackson" src="assets/images/jackson.JPG" style="height:10%;">
+            <div >Jackson</div>
+          </a></div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/maze/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="maze" src="assets/images/maze.JPG" style="height:10%;">
+            <div >Maze</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/niko/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="niko" src="assets/images/niko.JPG" style="height:10%;">
+            <div >Niko</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/porto/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="porto" src="assets/images/porto.JPG" style="height:10%;">
+            <div >Porto</div>
+          </a></div>
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/vcard/about.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="vcard" src="assets/images/vcard.JPG" style="height:10%;">
+            <div  class="nim-service-detail">V card</div>
+          </a></div>
+      </div>
+      <div  class="gap"></div>
+      <div  class="row">
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="assets/Maketing/satner/index.html" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank"><img  alt="satner" src="assets/images/satner.JPG" style="height:10%;">
+            <div >Satner</div>
+          </a></div> -->
+        <div  class="col-md-3 col-sm-6"><a  class="btn btn-custom-outline"
+            href="https://forms.gle/xEcnSmQ6gRDY2bka7" style="border-color:#000000;background-color: #0a0808;"
+            target="_blank">
+            <div >Create</div>
+          </a></div>
+      </div>
+    </div>
+    <div  class="gap"></div>
+  </section>
  <!-- [/INSPIRATION]
  ============================================================================================================================--> 
 
@@ -602,17 +826,17 @@
                     <div class="col-md-8 col-md-offset-2 grey">
                         <div id="testimonial" class="owl-carousel owl-theme">
                             <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Budget web creator, "Budget web creator Budget Web creator sit amet..", comes from a line in section 1.10.32.</h5>
                                 <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
                             </div>
 
                             <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Budget web creator, "Budget web creator Budget Web creator sit amet..", comes from a line in section 1.10.32.</h5>
                                 <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
                             </div>
 
                             <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Budget web creator, "Budget web creator Budget Web creator sit amet..", comes from a line in section 1.10.32.</h5>
                                 <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
                             </div>
                         </div>
@@ -798,7 +1022,7 @@
               href="https://forms.gle/bMyyWYL3AHpHGu9GA" target="_blank">Terms of Use</a><a 
               href="https://forms.gle/bMyyWYL3AHpHGu9GA" target="_blank">Privacy Policy</a></p>
         </div>
-      <div class="col-md-4"> <small>&copy; 2018 BWC. All rights reserved.</small></div>
+      <div class="col-md-4"> <small>&copy; 2018 BWC. .</small></div>
       <div class="col-md-4"> 
         <!--social-->
         

@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BudgetCreators';
+
+
+
+  childMenu=false;
+
+  toglechild(){
+    this.childMenu=this.childMenu?false:true;
+  }
+
+
 }
