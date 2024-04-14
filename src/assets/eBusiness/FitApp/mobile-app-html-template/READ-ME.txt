@@ -1,0 +1,11 @@
+  =>  Template Name    : FitApp - Mobile App HTML Template
+
+  =>  Template Link    : https://htmlcodex.com/mobile-app-html-template
+
+  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Template Author  : Budget web creator
+
+  =>  Author Website   : https://htmlcodex.com
+
+  =>  About Budget web creator : Budget web creator is one of the top creators and publishers of Budget web creator, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
