@@ -41,7 +41,7 @@ const locals = {
 
     const paths = {};
 
-    flatInnter(siteMap.flatMap(item => item.pages)).filter(item => item.name !== '#!').forEach(item => {
+    flatInnter(siteMap.flatMap(item => item.pages)).filter(item => item.name !== '#').forEach(item => {
       paths[item.pathName] = item.path + '.html'
     })
 
