@@ -17,13 +17,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
-
+          
+      - name: Check Node and npm versions
+        run: |
+          node -v
+          npm -v
+          
       - name: Install Dependencies
         run: npm ci
 
       - name: Build
+        env:
+            NODE_OPTIONS: --openssl-legacy-provider
         run: npm run build --prod
 
       - name: Deploy to Firebase
